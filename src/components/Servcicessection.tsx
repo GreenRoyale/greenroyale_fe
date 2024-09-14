@@ -3,8 +3,8 @@ import Image from "next/image";
 function SertvicesSection() {
   return (
     <>
-      <div>
-        <div className="py-8">
+      <div className="py-20">
+        <div className="py-10">
           <p className="text-[10px] text-[#6FAE4D] capitalize">
             About GreenRoyale
           </p>
