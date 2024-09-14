@@ -1,9 +1,9 @@
+import SignUpFormComponent from "@/components/SignupFormComponent";
 import Image from "next/image";
-
 function SignUp() {
   return (
     <>
-      <div>
+      <div className="flex">
         <div className="bg-[#E4FFF3] w-2/4 h-screen flex flex-col justify-between">
           <div className="px-16 pt-16 flex flex-col gap-12">
             <div className="w-[150px]">
@@ -35,7 +35,9 @@ function SignUp() {
             />
           </div>
         </div>
-        <div></div>
+        <div className="w-1/2 h-screen flex items-center">
+          <SignUpFormComponent />
+        </div>
       </div>
     </>
   );
