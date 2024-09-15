@@ -1,5 +1,4 @@
 import ForgotPasswordComponent from "@/components/ForgotpasswordComponent";
-import SignInFormComponent from "@/components/SigninFormComponent";
 import Image from "next/image";
 
 function ForgotPassword() {
