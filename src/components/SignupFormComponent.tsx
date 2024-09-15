@@ -1,7 +1,7 @@
 "use client";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import Link from "next/link";
-import * as Yup from "yup";
+import { signUpValidationSchema } from "@/schema/validationSchemas";
 
 const SignUpFormComponent = () => {
   const initialValues = {
@@ -11,18 +11,6 @@ const SignUpFormComponent = () => {
     password: "",
     confirmPassword: "",
   };
-
-  const validationSchema = Yup.object({
-    firstname: Yup.string().required("Required"),
-    lastname: Yup.string().required("Required"),
-    email: Yup.string().email("Invalid email format").required("Required"),
-    password: Yup.string()
-      .min(8, "Password must be at least 8 characters")
-      .required("Required"),
-    confirmPassword: Yup.string()
-      .oneOf([Yup.ref("password"), null], "Passwords must match")
-      .required("Required"),
-  });
 
   const onSubmit = (values: any) => {
     console.log("Form values", values); // Correctly log form values
@@ -38,7 +26,7 @@ const SignUpFormComponent = () => {
 
         <Formik
           initialValues={initialValues}
-          validationSchema={validationSchema}
+          validationSchema={signUpValidationSchema}
           onSubmit={onSubmit}
         >
           <Form className="flex flex-col gap-4 py-8">

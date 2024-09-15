@@ -1,4 +1,5 @@
 "use client";
+import { resetPasswordValidationSchema } from "@/schema/validationSchemas";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import Link from "next/link";
 import * as Yup from "yup";
@@ -8,15 +9,6 @@ const ResetPasswordComponent = () => {
     password: "",
     confirmPassword: "",
   };
-
-  const validationSchema = Yup.object({
-    password: Yup.string()
-      .min(8, "Password must be at least 8 characters")
-      .required("Required"),
-    confirmPassword: Yup.string()
-      .oneOf([Yup.ref("password"), null], "Passwords must match")
-      .required("Required"),
-  });
 
   const onSubmit = (values: any) => {
     console.log("Form values", values); // Correctly log form values
@@ -32,7 +24,7 @@ const ResetPasswordComponent = () => {
 
         <Formik
           initialValues={initialValues}
-          validationSchema={validationSchema}
+          validationSchema={resetPasswordValidationSchema}
           onSubmit={onSubmit}
         >
           <Form className="flex flex-col gap-4 py-8">
