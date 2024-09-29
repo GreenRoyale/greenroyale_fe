@@ -10,7 +10,7 @@ export default function RootLayout({
       <body>
         <Header />
 
-        <div className="w-5/6 mx-auto">{children}</div>
+        <div className="md:w-5/6 px-4  mx-auto">{children}</div>
       </body>
     </html>
   );

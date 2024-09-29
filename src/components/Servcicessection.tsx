@@ -8,12 +8,12 @@ function ServicesSection() {
           <p className="text-[10px] text-[#6FAE4D] capitalize">
             About GreenRoyale
           </p>
-          <h1 className="text-[50px] w-4/6">
+          <h1 className="md:text-[50px] text-3xl md:w-4/6">
             GreenRoyale Provide Recycling services with rewards
           </h1>
         </div>
-        <div className="grid grid-cols-3 gap-8">
-          <div className="p-10 bg-gray-100 rounded-3xl flex flex-col gap-4">
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="md:p-10 p-4 bg-gray-100 rounded-3xl flex flex-col gap-4">
             <h1 className="text-xl ">Safe Environment</h1>
             <p className="text-sm text-gray-500">
               Alternative innovation after ethical to network environmental
@@ -29,7 +29,7 @@ function ServicesSection() {
               />
             </div>
           </div>
-          <div className="p-10 bg-gray-100 rounded-3xl flex flex-col gap-4">
+          <div className="md:p-10 p-4 bg-gray-100 rounded-3xl flex flex-col gap-4">
             <h1 className="text-xl ">Safe Environment</h1>
             <p className="text-sm text-gray-500">
               Alternative innovation after ethical to network environmental
@@ -45,7 +45,7 @@ function ServicesSection() {
               />
             </div>
           </div>
-          <div className="p-10 bg-gray-100 rounded-3xl flex flex-col gap-4">
+          <div className="md:p-10 p-4 bg-gray-100 rounded-3xl flex flex-col gap-4">
             <h1 className="text-xl ">Safe Environment</h1>
             <p className="text-sm text-gray-500">
               Alternative innovation after ethical to network environmental

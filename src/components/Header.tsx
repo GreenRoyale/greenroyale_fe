@@ -3,8 +3,8 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <div className="w-5/6 mx-auto py-8 flex justify-between items-center">
-      <div className="h-10  ">
+    <div className="w-5/6 mx-auto md:py-8 py-6 flex justify-between items-center">
+      <div className="md:h-10 h-4  ">
         <Link href={"/"}>
           <Image
             src={"/logo.png"}
@@ -16,7 +16,7 @@ function Header() {
         </Link>{" "}
       </div>
 
-      <div className="flex items-center gap-10">
+      <div className="md:flex items-center gap-10 hidden ">
         <Link href={"/"}> Solutions </Link>
 
         <Link href={"/"}> About </Link>
