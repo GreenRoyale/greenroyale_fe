@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function SertvicesSection() {
+function ServicesSection() {
   return (
     <>
       <div className="py-20">
@@ -67,4 +67,4 @@ function SertvicesSection() {
   );
 }
 
-export default SertvicesSection;
+export default ServicesSection;
