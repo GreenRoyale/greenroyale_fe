@@ -7,7 +7,7 @@ function ResetPassword() {
   return (
     <>
       <div className="flex">
-        <div className="bg-[#E4FFF3] w-2/4 h-screen flex flex-col justify-between">
+        <div className="bg-[#E4FFF3] w-2/4 hidden h-screen md:flex flex-col justify-between">
           <div className="px-16 pt-16 flex flex-col gap-12">
             <div className="w-[150px]">
               <Image
@@ -38,7 +38,7 @@ function ResetPassword() {
             />
           </div>
         </div>
-        <div className="w-1/2 h-screen flex items-center">
+        <div className="md:w-1/2 w-full h-screen flex items-center">
           <ResetPasswordComponent />
         </div>
       </div>

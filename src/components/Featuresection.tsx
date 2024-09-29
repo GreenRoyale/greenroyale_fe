@@ -4,8 +4,8 @@ import Link from "next/link";
 function Featuresection() {
   return (
     <>
-      <div className="flex items-center gap-8">
-        <div className="w-1/2">
+      <div className="md:flex items-center gap-8">
+        <div className="md:w-1/2 py-4">
           <Image
             src={"/ft.webp"}
             width={1000}
@@ -15,11 +15,11 @@ function Featuresection() {
           />
         </div>
 
-        <div className="w-1/2 flex flex-col gap-4 items-start">
+        <div className="md:w-1/2 flex flex-col gap-4 items-start">
           <p className="text-[10px] text-[#6FAE4D] capitalize">
             About GreenRoyale
           </p>
-          <h1 className="text-[50px]">
+          <h1 className="md:text-[50px] text-3xl">
             GreenRoyale Provide Recycling services with rewards{" "}
           </h1>
           <div className="flex gap-4">
@@ -34,7 +34,7 @@ function Featuresection() {
             </div>
             <div>
               <h1 className="font-bold text-[#2F6D57]">Economic Benefits</h1>
-              <p className="text-[xs] text-gray-500">
+              <p className="md:text-[xs] text-xs text-gray-500">
                 Alternative innovation after ethical to network environmental
                 whiteboard transparent growth natural done
               </p>
@@ -52,7 +52,7 @@ function Featuresection() {
             </div>
             <div>
               <h1 className="font-bold text-[#2F6D57]">Safe Environment</h1>
-              <p className="text-[xs] text-gray-500">
+              <p className="md:text-[xs] text-xs text-gray-500">
                 Alternative innovation after ethical to network environmental
                 whiteboard transparent growth natural done
               </p>
@@ -60,7 +60,7 @@ function Featuresection() {
           </div>{" "}
           <Link
             href={"/signup"}
-            className="bg-[#6FAE4D] p-4 text-white rounded-lg"
+            className="bg-[#6FAE4D] md:p-4 p-2 md:text-base text-[10px] text-white rounded-lg"
           >
             {" "}
             More{" "}

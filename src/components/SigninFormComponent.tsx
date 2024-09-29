@@ -16,7 +16,7 @@ const SignInFormComponent = () => {
 
   return (
     <>
-      <div className="w-2/4 mx-auto">
+      <div className="md:w-2/4 w-full p-4 mx-auto">
         <div className="flex flex-col items-center ">
           <h1 className="font-medium text-xl ">Sign In to GreenRoyale</h1>
           <p>Welcome back! We&apos;ve missed you!</p>
@@ -109,7 +109,7 @@ const SignInFormComponent = () => {
             </button>
 
             <div className="w-full flex justify-center gap-2">
-              <p className="text-sm">Don't have an account? </p>{" "}
+              <p className="text-sm">Dont have an account? </p>{" "}
               <Link className="text-sm text-primarycolor" href={"/signup"}>
                 {" "}
                 Sign Up{" "}

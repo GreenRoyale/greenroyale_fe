@@ -5,9 +5,9 @@ import Link from "next/link";
 function Footer() {
   return (
     <>
-      <div className="bg-[#35725C]">
+      <div className=" bg-[#35725C]">
         <div className="w-5/6 mx-auto py-10">
-          <div className="flex justify-between">
+          <div className="flex md:flex-row flex-col gap-8 justify-between">
             <div className="flex flex-col gap-4">
               <h1 className="font-bold text-white">Legal</h1>
               <p className="text-sm text-white">Terms & Condition </p>
@@ -44,7 +44,7 @@ function Footer() {
                 <input
                   type="text"
                   placeholder="email address"
-                  className="bg-[#204F38] text-xs border border-white rounded-md p-2"
+                  className="bg-[#204F38] w-full text-xs border border-white rounded-md p-2"
                 />
               </div>
               <Link

@@ -5,27 +5,27 @@ function Herosection() {
   return (
     <>
       <div className="w-full relative">
-        <div className="w-full h-[85%]">
+        <div className="w-full md:h-[85%] h-screen">
           <Image
             src={"/hero.jpeg"}
             width={1000}
             height={1000}
             alt="hero"
-            className="w-full h-full object-cover rounded-3xl"
+            className="w-full h-full object-cover md:rounded-3xl rounded-lg"
           />
         </div>
         <div className="flex flex-col items-center justify-center absolute top-0 right-0 bottom-0 left-0">
-          <h1 className="text-[114px] text-white font-extralight w-5/6 leading-tight text-center">
+          <h1 className="md:text-[114px] text-[30px] text-white font-extralight w-5/6 leading-tight text-center">
             Transforming Waste into Value
           </h1>
-          <p className="text-white text-2xl w-4/6 text-center">
+          <p className="text-white md:text-2xl text-[10px] w-4/6 text-center">
             Recycle with purpose. Earn rewards, save the planet, and make a
             difference—one item at a time.
           </p>
           <div className="flex gap-4">
             <Link
               href={"/login"}
-              className="p-4 border border-white text-white rounded-lg"
+              className="md:p-4 p-2 md:text-base text-xs border border-white text-white rounded-lg"
             >
               {" "}
               Sign In{" "}
@@ -33,7 +33,7 @@ function Herosection() {
 
             <Link
               href={"/signup"}
-              className="bg-[#6FAE4D] p-4 text-white rounded-lg"
+              className="bg-[#6FAE4D] md:p-4 p-2 md:text-base text-xs text-white rounded-lg"
             >
               {" "}
               Get Started{" "}
@@ -41,17 +41,17 @@ function Herosection() {
           </div>
         </div>
       </div>
-      <marquee behavior="" direction="left">
-        <div className="flex gap-32 py-10">
-          <p>Recycling</p>
+      <div>
+        <div className="flex md:gap-32 gap-6 py-10">
+          <p className="text-[10px]">Recycling</p>
 
-          <p>Environmental</p>
+          <p className="text-[10px]">Environmental</p>
 
-          <p>Eco-friendly</p>
-          <p>rewards</p>
-          <p>Waste</p>
+          <p className="text-[10px]">Eco-friendly</p>
+          <p className="text-[10px]">rewards</p>
+          <p className="text-[10px]">Waste</p>
         </div>
-      </marquee>
+      </div>
     </>
   );
 }

@@ -1,6 +1,6 @@
 import Topnav from "@/components/Topnav";
 
-function Layout({ children }) {
+function Layout({ children }: any) {
   return (
     <>
       <Topnav />

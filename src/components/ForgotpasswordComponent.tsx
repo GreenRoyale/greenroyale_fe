@@ -15,7 +15,7 @@ const ForgotPasswordComponent = () => {
 
   return (
     <>
-      <div className="w-2/4 mx-auto">
+      <div className="md:w-2/4 w-full p-4 mx-auto">
         <div className="flex flex-col items-center ">
           <h1 className="font-medium text-xl ">Forgot Password</h1>
           <p>
