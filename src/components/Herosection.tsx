@@ -41,7 +41,7 @@ function Herosection() {
           </div>
         </div>
       </div>
-      <marquee behavior="" direction="left">
+      <div>
         <div className="flex gap-32 py-10">
           <p>Recycling</p>
 
@@ -51,7 +51,7 @@ function Herosection() {
           <p>rewards</p>
           <p>Waste</p>
         </div>
-      </marquee>
+      </div>
     </>
   );
 }

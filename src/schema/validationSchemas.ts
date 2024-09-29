@@ -15,7 +15,7 @@ export const signUpValidationSchema = Yup.object({
     .min(8, "Password must be at least 8 characters")
     .required("Required"),
   confirmPassword: Yup.string()
-    .oneOf([Yup.ref("password"), null], "Passwords must match")
+    .oneOf([Yup.ref("password"), undefined], "Passwords must match")
     .required("Required"),
 });
 
@@ -28,6 +28,6 @@ export const resetPasswordValidationSchema = Yup.object({
     .min(8, "Password must be at least 8 characters")
     .required("Required"),
   confirmPassword: Yup.string()
-    .oneOf([Yup.ref("password"), null], "Passwords must match")
+    .oneOf([Yup.ref("password"), undefined], "Passwords must match")
     .required("Required"),
 });
