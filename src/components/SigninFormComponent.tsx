@@ -109,7 +109,7 @@ const SignInFormComponent = () => {
             </button>
 
             <div className="w-full flex justify-center gap-2">
-              <p className="text-sm">Don't have an account? </p>{" "}
+              <p className="text-sm">Dont have an account? </p>{" "}
               <Link className="text-sm text-primarycolor" href={"/signup"}>
                 {" "}
                 Sign Up{" "}
