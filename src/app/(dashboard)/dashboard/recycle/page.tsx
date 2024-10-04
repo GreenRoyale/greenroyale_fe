@@ -1,7 +1,9 @@
 import Leaderboard from "@/components/leaderboard";
+import RecycleModal from "@/components/recycle-modal";
 import { columns, Payment } from "@/components/recycle-table/column";
 import { DataTable } from "@/components/recycle-table/data-table";
-import { CirclePlusIcon, DownloadIcon, SearchIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { DownloadIcon, SearchIcon } from "lucide-react";
 
 async function getData(): Promise<Payment[]> {
   // Fetch data from your API here.
@@ -21,13 +23,18 @@ async function getData(): Promise<Payment[]> {
 
 export default async function Recycle() {
   const data = await getData();
+  // const [openAddRecycleitem, setOpenAddRecycle] = React.useState(false);
+
+  const handlecloseRecycleDialog = () => {
+    //TODO:
+  };
   return (
     <div>
       <header className="bg-[#2F6D57]">
         <div className=" text-white boxed__container">
           <div className="flex items-center justify-between">
             <div>
-              <h2>Recycle</h2>
+              <h2 className="text-4xl font-semibold">Recycle</h2>
               <p className="text-dashboardGreen100">
                 Stay on top your app&apos;s performance with real-time insights.
               </p>
@@ -50,14 +57,15 @@ export default async function Recycle() {
               />
             </div>
             <div className="flex items-center gap-8">
-              <div className="border border-white rounded-[4px] text-base h-[44px] flex gap-4 items-center px-4 w-fit">
+              <Button className="border border-white bg-[#6FAE4D] rounded-[4px] text-base h-[44px] flex gap-4 items-center px-4 w-fit">
                 <DownloadIcon />
                 <span>Export</span>
-              </div>
-              <div className="rounded-[8px] bg-[#6FAE4D] flex items-center text-white gap-4 text-base w-fit h-[44px] px-[37px]">
+              </Button>
+              <RecycleModal />
+              {/* <Button className="rounded-md border border-white bg-[#6FAE4D] flex items-center text-white gap-4 text-base w-fit h-[44px] px-[37px]">
                 <CirclePlusIcon />
                 <span>Add New</span>
-              </div>
+              </Button> */}
             </div>
           </div>
         </div>
