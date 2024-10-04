@@ -1,0 +1,16 @@
+.boxed__container {
+  @apply w-11/12 mx-auto;
+}
+
+a {
+  @apply no-underline;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none ;
+  }
+}
+
+.curved__header {
+  @apply rounded-bl-3xl rounded-br-3xl;
+}
+

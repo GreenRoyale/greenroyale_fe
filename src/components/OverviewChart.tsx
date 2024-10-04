@@ -39,7 +39,10 @@ const chartConfig = {
 
 export function OverviewChart() {
   return (
-    <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
+    <ChartContainer
+      config={chartConfig}
+      className="min-h-[200px] w-full text-base font-medium"
+    >
       <BarChart accessibilityLayer data={chartData}>
         <CartesianGrid vertical={false} />
         <XAxis

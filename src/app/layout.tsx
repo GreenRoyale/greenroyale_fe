@@ -46,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>{children}</body>
+      <body className="max-w-[2560px] mx-auto">{children}</body>
     </html>
   );
 }

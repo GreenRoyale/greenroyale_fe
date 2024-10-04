@@ -1,5 +1,6 @@
 import SignInFormComponent from "@/components/SigninFormComponent";
 import Image from "next/image";
+import Link from "next/link";
 
 function Login() {
   return (
@@ -8,13 +9,15 @@ function Login() {
         <div className="bg-[#E4FFF3] w-2/4 h-screen flex flex-col justify-between">
           <div className="px-16 pt-16 flex flex-col gap-12">
             <div className="w-[150px]">
-              <Image
-                src={"/logo.png"}
-                width={1000}
-                height={1000}
-                alt="logo"
-                className="w-full h-full object-cover"
-              />
+              <Link href={"/"}>
+                <Image
+                  src={"/logo.png"}
+                  width={1000}
+                  height={1000}
+                  alt="logo"
+                  className="w-full h-full object-cover"
+                />
+              </Link>
             </div>
 
             <div>

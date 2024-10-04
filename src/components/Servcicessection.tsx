@@ -5,17 +5,17 @@ function ServicesSection() {
     <>
       <div className="py-20">
         <div className="py-10">
-          <p className="text-[10px] text-[#6FAE4D] capitalize">
+          <p className="text-base text-[#6FAE4D] capitalize font-medium">
             About GreenRoyale
           </p>
-          <h1 className="md:text-[50px] text-3xl md:w-4/6">
+          <h1 className="md:text-[50px] text-3xl md:w-4/6 leading-normal">
             GreenRoyale Provide Recycling services with rewards
           </h1>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:p-10 p-4 bg-gray-100 rounded-3xl flex flex-col gap-4">
             <h1 className="text-xl ">Safe Environment</h1>
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-500 leading-normal">
               Alternative innovation after ethical to network environmental
               whiteboard transparent growth natural done
             </p>
