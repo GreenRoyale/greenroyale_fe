@@ -97,7 +97,7 @@ const RecycleModal: React.FC = () => {
   return (
     <Dialog>
       <DialogTrigger>
-        <Button className="rounded-md border border-white bg-[#6FAE4D] flex items-center text-white gap-4 text-base w-fit h-[44px] px-[37px]">
+        <Button className="rounded-md border border-white bg-[#6FAE4D] flex items-center text-white gap-4 text-base w-fit h-12 px-[37px]">
           <CirclePlusIcon />
           <span>Add New</span>
         </Button>
@@ -110,7 +110,6 @@ const RecycleModal: React.FC = () => {
                 <h3 className="text-[#9095A0] font-semibold">
                   Recycle / Log Recycle
                 </h3>
-                {/* <XCircleIcon  /> */}
               </div>
             </DialogTitle>
           </DialogHeader>

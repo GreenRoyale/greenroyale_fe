@@ -10,3 +10,7 @@ a {
   }
 }
 
+.curved__header {
+  @apply rounded-bl-3xl rounded-br-3xl;
+}
+
