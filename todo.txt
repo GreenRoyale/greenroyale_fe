@@ -1,0 +1,4 @@
+1. Add metadata configuration
+2. Add the not-found page
+3. consume the api
+4. Add the static font and serve it from the code

@@ -1,4 +1,5 @@
 "use client";
+import { forgotPasswordValidationSchema } from "@/schema/validationSchemas";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import Link from "next/link";
 import * as Yup from "yup";
@@ -7,10 +8,6 @@ const ForgotPasswordComponent = () => {
   const initialValues = {
     email: "",
   };
-
-  const validationSchema = Yup.object({
-    email: Yup.string().email("Invalid email format").required("Required"),
-  });
 
   const onSubmit = (values: any) => {
     console.log("Form values", values); // Correctly log form values
@@ -29,7 +26,7 @@ const ForgotPasswordComponent = () => {
 
         <Formik
           initialValues={initialValues}
-          validationSchema={validationSchema}
+          validationSchema={forgotPasswordValidationSchema}
           onSubmit={onSubmit}
         >
           <Form className="flex flex-col gap-4 py-8">
