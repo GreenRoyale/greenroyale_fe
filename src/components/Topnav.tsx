@@ -9,7 +9,7 @@ function Topnav() {
         <div className="w-11/12 mx-auto">
           <div className="py-4 border-b border-[#51AD84] flex justify-between">
             <div className="flex gap-16 items-center">
-              <div className="w-40">
+              <div className="w-80">
                 <Image
                   src={"/logowhite.png"}
                   width={1000}
@@ -45,7 +45,7 @@ function Topnav() {
                 <Bell className="text-white" />
               </div>
               <div className="flex gap-4">
-                <div className="w-14 h-14 ">
+                <div className="w-24">
                   <Image
                     src={"/logo.png"}
                     width={1000}

@@ -5,7 +5,7 @@ function Herosection() {
   return (
     <>
       <div className="w-full relative">
-        <div className="w-full md:h-[85%] h-screen">
+        <div className="w-full md:h-[85%] h-[60%]">
           <Image
             src={"/hero.jpeg"}
             width={1000}
@@ -14,8 +14,8 @@ function Herosection() {
             className="w-full h-full object-cover md:rounded-3xl rounded-lg"
           />
         </div>
-        <div className="flex flex-col items-center justify-center absolute top-0 right-0 bottom-0 left-0">
-          <h1 className="md:text-[114px] text-[30px] text-white font-extralight w-5/6 leading-tight text-center">
+        <div className="flex flex-col items-center justify-center absolute top-0 right-0 bottom-0 left-0 space-y-8">
+          <h1 className="md:text-[114px] text-[30px] text-white font-bold w-5/6 leading-tight text-center">
             Transforming Waste into Value
           </h1>
           <p className="text-white md:text-2xl text-[10px] w-4/6 text-center">
@@ -42,14 +42,14 @@ function Herosection() {
         </div>
       </div>
       <div>
-        <div className="flex md:gap-32 gap-6 py-10">
-          <p className="text-[10px]">Recycling</p>
+        <div className="flex md:gap-32 gap-6 py-10 justify-between items-center">
+          <p className="text-base font-medium">Recycling</p>
 
-          <p className="text-[10px]">Environmental</p>
+          <p className="text-base font-medium">Environmental</p>
 
-          <p className="text-[10px]">Eco-friendly</p>
-          <p className="text-[10px]">rewards</p>
-          <p className="text-[10px]">Waste</p>
+          <p className="text-base font-medium">Eco-friendly</p>
+          <p className="text-base font-medium">rewards</p>
+          <p className="text-base font-medium">Waste</p>
         </div>
       </div>
     </>

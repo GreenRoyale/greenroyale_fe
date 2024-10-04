@@ -5,11 +5,11 @@ function SkillsSection() {
     <>
       <div className="md:flex gap-4">
         <div className="md:w-2/4 flex flex-col gap-4">
-          <p className="text-[#6FAE4D]">Skills</p>
-          <h1 className="md:text-[50px] text-3xl">
+          <p className="text-[#6FAE4D] font-medium">Skills</p>
+          <h1 className="md:text-[50px] text-3xl leading-normal">
             Getting A Greener Future Safe Environment
           </h1>
-          <p className="text-sm">
+          <p className="text-base">
             Competently cultivate worldwide e-tailers through principle-centered
             value professionally engineer high-payoff deliverables without
             exceptional processes. Rapidiously network cost effective vortals

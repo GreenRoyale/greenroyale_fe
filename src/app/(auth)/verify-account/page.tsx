@@ -1,7 +1,6 @@
-import ForgotPasswordComponent from "@/components/ForgotpasswordComponent";
-import SignInFormComponent from "@/components/SigninFormComponent";
-import VerifyAccountComponent from "@/components/VerifyaccountFormComponent";
-import Image from "next/image";
+import VerifyAccountComponent from "@/components/VerifyaccountFormComponent"
+import { Link } from "lucide-react"
+import Image from "next/image"
 
 function ForgotPassword() {
   return (
@@ -10,13 +9,15 @@ function ForgotPassword() {
         <div className="bg-[#E4FFF3] w-2/4 h-screen flex flex-col justify-between">
           <div className="px-16 pt-16 flex flex-col gap-12">
             <div className="w-[150px]">
+              <Link href="/">
               <Image
                 src={"/logo.png"}
                 width={1000}
                 height={1000}
                 alt="logo"
                 className="w-full h-full object-cover"
-              />
+                />
+                </Link>
             </div>
 
             <div>
