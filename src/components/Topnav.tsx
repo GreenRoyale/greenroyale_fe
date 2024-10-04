@@ -18,20 +18,20 @@ function Topnav() {
                   alt="logo"
                 />
               </div>
-              <div className="flex gap-8 ">
-                <Link href={"/dashboard"} className="text-sm text-white">
+              <div className="flex gap-8 text-base text-white">
+                <Link href={"/dashboard"} className="">
                   {" "}
                   Overview{" "}
                 </Link>
-                <Link href={"/recycle"} className="text-sm text-white">
+                <Link href={"/recycle"} className="">
                   {" "}
                   Recycle{" "}
                 </Link>
-                <Link href={"/rewards"} className="text-sm text-white">
+                <Link href={"/rewards"} className="">
                   {" "}
                   Rewards{" "}
                 </Link>
-                <Link href={"/habit-tracking"} className="text-sm text-white">
+                <Link href={"/habit-tracking"} className="">
                   {" "}
                   Habit Tracking{" "}
                 </Link>
@@ -45,13 +45,13 @@ function Topnav() {
                 <Bell className="text-white" />
               </div>
               <div className="flex gap-4">
-                <div className="w-24">
+                <div className="w-16 h-16">
                   <Image
                     src={"/logo.png"}
                     width={1000}
                     height={1000}
                     alt="img"
-                    className="w-full h-full object-cover rounded-full"
+                    className="w-full h-full object-cover rounded-full border"
                   />
                 </div>
                 <div>
