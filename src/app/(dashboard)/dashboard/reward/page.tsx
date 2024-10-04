@@ -1,40 +1,18 @@
 import Leaderboard from "@/components/leaderboard";
-import RecycleModal from "@/components/recycle-modal";
-import { columns, Payment } from "@/components/recycle-table/column";
 import { DataTable } from "@/components/recycle-table/data-table";
+import RewardModal from "@/components/reward-modal";
+import { rewardColumns } from "@/components/reward-table/column";
 import { Button } from "@/components/ui/button";
 import { DownloadIcon, SearchIcon } from "lucide-react";
 
-async function getData(): Promise<Payment[]> {
-  // Fetch data from your API here.
-  return [
-    {
-      id: "728ed52f",
-      amount: 100,
-      status: "pending",
-      email: "m@example.com",
-      material: "Plastic",
-      quantity: "10",
-      date: "2022-01-01",
-    },
-    // ...
-  ];
-}
-
-export default async function Recycle() {
-  const data = await getData();
-  // const [openAddRecycleitem, setOpenAddRecycle] = React.useState(false);
-
-  const handlecloseRecycleDialog = () => {
-    //TODO:
-  };
+const page = () => {
   return (
     <div>
       <header className="bg-[#2F6D57] curved__header">
         <div className=" text-white boxed__container">
           <div className="flex items-center justify-between">
             <div>
-              <h2 className="text-4xl font-semibold">Recycle</h2>
+              <h2 className="text-4xl font-semibold">Rewards</h2>
               <p className="text-dashboardGreen100">
                 Stay on top your app&apos;s performance with real-time insights.
               </p>
@@ -61,7 +39,7 @@ export default async function Recycle() {
                 <DownloadIcon />
                 <span>Export</span>
               </Button>
-              <RecycleModal />
+              <RewardModal />
             </div>
           </div>
         </div>
@@ -69,7 +47,7 @@ export default async function Recycle() {
 
       <main className="grid grid-cols-12 boxed__container py-24">
         <div className="w-full col-start-1 col-end-8 mx-auto">
-          <DataTable columns={columns} data={data} />
+          <DataTable columns={rewardColumns} data={[]} />
         </div>
         <div className="col-start-9 col-end-13 space-y-4">
           <div>
@@ -80,4 +58,6 @@ export default async function Recycle() {
       </main>
     </div>
   );
-}
+};
+
+export default page;
