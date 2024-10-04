@@ -30,13 +30,20 @@ const RecycleModal: React.FC = () => {
   const materialType = [
     { label: "Plastic", value: "plastic" },
     { label: "Can", value: "can" },
+    { label: "Metal", value: "metal" },
+    {
+      label: "Elecronics (E-waste) Phones, Laptops, Light Bulbs",
+      value: "elecrical",
+    },
+    { label: "Textile Cotton, Polyester", value: "cotton" },
+    { label: "Wood", value: "wood" },
+    { label: "Organic Waste: Food Scraps, Yard Waste", value: "organic" },
+    { label: "Rubber Tires", value: "rubber" },
   ];
   const [error, setError] = React.useState("");
   const [quantity, setQuantity] = React.useState("");
   const [weight, setWeight] = React.useState("");
   const [materials, setMaterials] = React.useState<RecycleMaterial[]>([]);
-
-  console.log({ materials });
 
   const handleAdd = (e: any) => {
     e.preventDefault();
