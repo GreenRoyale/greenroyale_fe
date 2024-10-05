@@ -19,7 +19,7 @@ function Login() {
 
             <div>
               <h1 className="font-medium text-4xl w-4/6">
-                Welcome Back to GreenRoyale{" "}
+                Welcome Back to <span></span> GreenRoyale{" "}
               </h1>
               <p className="text-xl w-4/6 ">
                 Discover cutting-edge recycling solution powered by AI
